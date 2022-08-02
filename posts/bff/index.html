@@ -4,10 +4,12 @@
   lang="en"
   data-figures=""
   
+    class="page"
+  
   
   >
   <head>
-<title>Technology | Tommy&#39;s Blog</title>
+<title>BFF (Back-End For Front-End) | Tommy&#39;s Blog</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,22 +19,21 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="The issues of traditional &ldquo;direct point to point approach&rdquo; Updating microservices will cause code change in front-end application and further cause …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Technology" />
+<meta name="twitter:title" content="BFF (Back-End For Front-End)" />
 <meta name="twitter:image" content="https://thankyoudishwasher.github.io/"/>
-<meta property="og:url" content="https://thankyoudishwasher.github.io/categories/technology/" />
-<meta property="og:title" content="Technology" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="https://thankyoudishwasher.github.io/posts/bff/" />
+<meta property="og:title" content="BFF (Back-End For Front-End)" />
+<meta property="og:description" content="The issues of traditional &ldquo;direct point to point approach&rdquo; Updating microservices will cause code change in front-end application and further cause …" />
 <meta property="og:image" content="https://thankyoudishwasher.github.io/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://thankyoudishwasher.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://thankyoudishwasher.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://thankyoudishwasher.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://thankyoudishwasher.github.io/categories/technology/">
-<link rel="alternate" type="application/rss+xml" href="https://thankyoudishwasher.github.io/categories/technology/index.xml" title="Tommy's Blog" />
+<link rel="canonical" href="https://thankyoudishwasher.github.io/posts/bff/">
 
 
 
@@ -96,19 +97,10 @@
 </header>
 
     <main>
-
-
-
+  
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://thankyoudishwasher.github.io/posts/bff/" title="BFF (Back-End For Front-End)">BFF (Back-End For Front-End)</a>
-      </h3>
-      
+  <article class="post_content">
+    <h1 class="post_title">BFF (Back-End For Front-End)</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -155,23 +147,37 @@
   </span>
   </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>The issues of traditional “direct point to point approach” Updating microservices will cause code change in front-end application and further cause new front-end application need to be deployed. Data from microservices may not be formatted, which causes additonal data transformer in front-end. You also have …</p>
-          
-          <br>
-          <a href="https://thankyoudishwasher.github.io/posts/bff/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    <div class="post_body"><h4 id="the-issues-of-traditional-direct-point-to-point-approach"><strong>The issues of traditional &ldquo;direct point to point approach&rdquo;</strong></h4>
+<ul>
+<li>Updating microservices will cause code change in front-end application and further cause new front-end application need to be deployed.</li>
+<li>Data from microservices may not be formatted, which causes additonal data transformer in front-end. You also have to orchestrate many API calls. They will make your front-end application increasingly complex and difficult to maintain.</li>
+<li>Huge number of calls you make in a point to point application may hurt the performance.</li>
+</ul>
+<h4 id="how-bff-works"><strong>How BFF works</strong></h4>
+<p>BFF is an API sittnig between front-end application and back-end microservices APIs. In this case&hellip;</p>
+<ol>
+<li>The front-end will just make a single call to the BFF.</li>
+<li>The BFF calls relevant microservices.</li>
+<li>The BFF format the responses.</li>
+<li>The BFF returns nicely formatted data back to the front-end.</li>
+</ol>
+<h4 id="the-benefits-of-bff"><strong>The benefits of BFF</strong></h4>
+<ul>
+<li>Keep front-ends simple and light so it&rsquo;s easier to maintain.</li>
+<li>BFF can hide sensitive information from microservices.</li>
+</ul>
 
-      <li>
-      </li>
-    </ul>
-  </div>
+    </div>
+<div class="post_comments">
+  
+  
+  
+</div>
+
+
+
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -240,9 +246,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

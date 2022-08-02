@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TIL on Tommy&#39;s Blog</title>
+    <link>https://thankyoudishwasher.github.io/categories/til/</link>
+    <description>Recent content in TIL on Tommy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Aug 2022 22:44:40 +1000</lastBuildDate><atom:link href="https://thankyoudishwasher.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Packages are for everyone</title>
+      <link>https://thankyoudishwasher.github.io/posts/packages-are-for-every-team/</link>
+      <pubDate>Tue, 02 Aug 2022 22:44:40 +1000</pubDate>
+      
+      <guid>https://thankyoudishwasher.github.io/posts/packages-are-for-every-team/</guid>
+      <description>
+        
+          
+            Like prettier consume configuration in different formats. If we want to implement a script like findup to find a configuration file. We need to consider all the possible formats that other teams may have already used.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Do somthing on the second render? NO!</title>
+      <link>https://thankyoudishwasher.github.io/posts/do-sth-on-second-render/</link>
+      <pubDate>Tue, 02 Aug 2022 22:35:40 +1000</pubDate>
+      
+      <guid>https://thankyoudishwasher.github.io/posts/do-sth-on-second-render/</guid>
+      <description>
+        
+          
+            If something is expected to run on the second render when a dependency is changed in useEffect. It&amp;rsquo;s probably wrong!
+Instead, try to move useEffect to lower level, and when the dependency is ready, useEffect will run something on it&amp;rsquo;s first render.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
