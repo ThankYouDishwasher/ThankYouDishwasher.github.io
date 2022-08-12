@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TIL on Tommy&#39;s Blog</title>
-    <link>https://thankyoudishwasher.github.io/categories/til/</link>
-    <description>Recent content in TIL on Tommy&#39;s Blog</description>
+    <title>Mistakes on Tommy&#39;s Blog</title>
+    <link>https://thankyoudishwasher.github.io/tags/mistakes/</link>
+    <description>Recent content in Mistakes on Tommy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Aug 2022 21:39:46 +1000</lastBuildDate><atom:link href="https://thankyoudishwasher.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Aug 2022 21:39:46 +1000</lastBuildDate><atom:link href="https://thankyoudishwasher.github.io/tags/mistakes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TS files may reference JS files complied</title>
       <link>https://thankyoudishwasher.github.io/posts/clean-js/</link>
@@ -18,23 +18,6 @@
           
             This is a case happening in unit testing. Any changes and console.log couldn&amp;rsquo;t be reflected in the testing log. It finally turned out that the testing was referencing a JS file complied as the route I imported didn&amp;rsquo;t have a suffix, and by default, the JS files will be consumed.
 In order to reduce the noises caused by JS files, you can run yarn clean
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Run a specific test</title>
-      <link>https://thankyoudishwasher.github.io/posts/run-a-specific-test/</link>
-      <pubDate>Fri, 12 Aug 2022 21:34:09 +1000</pubDate>
-      
-      <guid>https://thankyoudishwasher.github.io/posts/run-a-specific-test/</guid>
-      <description>
-        
-          
-            Don&amp;rsquo;t have to comment out other test cases but using only
-test.only(name, fn, timeout); 
           
           
         

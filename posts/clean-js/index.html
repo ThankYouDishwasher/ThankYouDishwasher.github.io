@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>Packages are for everyone | Tommy&#39;s Blog</title>
+<title>TS files may reference JS files complied | Tommy&#39;s Blog</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,21 +19,21 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Like prettier consume configuration in different formats. If we want to implement a script like findup to find a configuration file. We need to consider all the …" />
+<meta name="description" content="This is a case happening in unit testing. Any changes and console.log couldn&rsquo;t be reflected in the testing log. It finally turned out that the testing was …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Packages are for everyone" />
+<meta name="twitter:title" content="TS files may reference JS files complied" />
 <meta name="twitter:image" content="https://thankyoudishwasher.github.io/"/>
-<meta property="og:url" content="https://thankyoudishwasher.github.io/posts/packages-are-for-every-team/" />
-<meta property="og:title" content="Packages are for everyone" />
-<meta property="og:description" content="Like prettier consume configuration in different formats. If we want to implement a script like findup to find a configuration file. We need to consider all the …" />
+<meta property="og:url" content="https://thankyoudishwasher.github.io/posts/clean-js/" />
+<meta property="og:title" content="TS files may reference JS files complied" />
+<meta property="og:description" content="This is a case happening in unit testing. Any changes and console.log couldn&rsquo;t be reflected in the testing log. It finally turned out that the testing was …" />
 <meta property="og:image" content="https://thankyoudishwasher.github.io/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://thankyoudishwasher.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://thankyoudishwasher.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://thankyoudishwasher.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://thankyoudishwasher.github.io/posts/packages-are-for-every-team/">
+<link rel="canonical" href="https://thankyoudishwasher.github.io/posts/clean-js/">
 
 
 
@@ -100,7 +100,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Packages are for everyone</h1>
+    <h1 class="post_title">TS files may reference JS files complied</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -108,21 +108,22 @@
 </svg>
 </span>
     <span class="post_date">
-      Aug 2, 2022</span>
+      Aug 12, 2022</span>
     <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://thankyoudishwasher.github.io/tags/mistakes/' title="Mistakes" class="post_tag button button_translucent">Mistakes
+        </a><a href='https://thankyoudishwasher.github.io/tags/testing/' title="Testing" class="post_tag button button_translucent">Testing
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Packages%20are%20for%20everyone&url=https%3a%2f%2fthankyoudishwasher.github.io%2fposts%2fpackages-are-for-every-team%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=TS%20files%20may%20reference%20JS%20files%20complied&url=https%3a%2f%2fthankyoudishwasher.github.io%2fposts%2fclean-js%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fthankyoudishwasher.github.io%2fposts%2fpackages-are-for-every-team%2f&t=Packages%20are%20for%20everyone" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fthankyoudishwasher.github.io%2fposts%2fclean-js%2f&t=TS%20files%20may%20reference%20JS%20files%20complied" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -136,7 +137,7 @@
 </svg>
 
     </a>
-    <a href="https://thankyoudishwasher.github.io/posts/packages-are-for-every-team/" title="Copy Link" class="link link_yank">
+    <a href="https://thankyoudishwasher.github.io/posts/clean-js/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -147,7 +148,8 @@
   </span>
   </div>
 
-    <div class="post_body"><p>Like prettier consume configuration in <a href="https://prettier.io/docs/en/configuration.html" title="prettier configuration file">different formats</a>. If we want to implement a script like <a href="https://github.com/sindresorhus/find-up" title="findup">findup</a> to find a configuration file. We need to consider all the possible formats that other teams may have already used.</p>
+    <div class="post_body"><p>This is a case happening in unit testing. Any changes and console.log couldn&rsquo;t be reflected in the testing log. It finally turned out that the testing was referencing a JS file complied as the route I imported didn&rsquo;t have a suffix, and by default, the JS files will be consumed.</p>
+<p>In order to reduce the noises caused by JS files, you can run <code>yarn clean</code></p>
 
     </div>
 <div class="post_comments">

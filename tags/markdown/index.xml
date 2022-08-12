@@ -16,7 +16,7 @@
       <description>
         
           
-            Markdown Cheatsheet Heading 1 Heading 2 Heading 3 Heading 4 Common text
+            Heading 1 Heading 2 Heading 3 Heading 4 Common text
 Emphasized text
 Strikethrough text
 Strong text
@@ -26,6 +26,7 @@ heading-1
 Table, like this one :
 First Header Second Header Content Cell Content Cell Content Cell Content Cell Adding a pipe | in a cell :
 First Header Second Header Content Cell Content Cell Content Cell | Left, right and center aligned table
+Left aligned Header Right aligned Header Center aligned Header Content Cell Content Cell Content Cell Content Cell Content Cell Content Cell code()
           
           
         

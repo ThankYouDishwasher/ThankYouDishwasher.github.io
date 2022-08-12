@@ -6,7 +6,41 @@
     <description>Recent content on Tommy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Aug 2022 22:44:40 +1000</lastBuildDate><atom:link href="https://thankyoudishwasher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Aug 2022 21:39:46 +1000</lastBuildDate><atom:link href="https://thankyoudishwasher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TS files may reference JS files complied</title>
+      <link>https://thankyoudishwasher.github.io/posts/clean-js/</link>
+      <pubDate>Fri, 12 Aug 2022 21:39:46 +1000</pubDate>
+      
+      <guid>https://thankyoudishwasher.github.io/posts/clean-js/</guid>
+      <description>
+        
+          
+            This is a case happening in unit testing. Any changes and console.log couldn&amp;rsquo;t be reflected in the testing log. It finally turned out that the testing was referencing a JS file complied as the route I imported didn&amp;rsquo;t have a suffix, and by default, the JS files will be consumed.
+In order to reduce the noises caused by JS files, you can run yarn clean
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Run a specific test</title>
+      <link>https://thankyoudishwasher.github.io/posts/run-a-specific-test/</link>
+      <pubDate>Fri, 12 Aug 2022 21:34:09 +1000</pubDate>
+      
+      <guid>https://thankyoudishwasher.github.io/posts/run-a-specific-test/</guid>
+      <description>
+        
+          
+            Don&amp;rsquo;t have to comment out other test cases but using only
+test.only(name, fn, timeout); 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Packages are for everyone</title>
       <link>https://thankyoudishwasher.github.io/posts/packages-are-for-every-team/</link>
@@ -65,7 +99,7 @@ Instead, try to move useEffect to lower level, and when the dependency is ready,
       <description>
         
           
-            Markdown Cheatsheet Heading 1 Heading 2 Heading 3 Heading 4 Common text
+            Heading 1 Heading 2 Heading 3 Heading 4 Common text
 Emphasized text
 Strikethrough text
 Strong text
@@ -75,6 +109,7 @@ heading-1
 Table, like this one :
 First Header Second Header Content Cell Content Cell Content Cell Content Cell Adding a pipe | in a cell :
 First Header Second Header Content Cell Content Cell Content Cell | Left, right and center aligned table
+Left aligned Header Right aligned Header Center aligned Header Content Cell Content Cell Content Cell Content Cell Content Cell Content Cell code()
           
           
         
